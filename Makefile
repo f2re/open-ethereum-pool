@@ -5,7 +5,8 @@
 .PHONY: all test clean
 
 GOBIN = ./build/bin
-GOGET = env GO111MODULE=on go get
+#GOGET = env GO111MODULE=on go get
+GOGET = env  go install 
 GOTEST = env GO111MODULE=on go test
 
 all:
